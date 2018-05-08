@@ -1,5 +1,136 @@
 
-.logo {
-	height: 100px;
-	width: 100px;
+/*built for max 320 px device width*/
+
+/*======================================
+Google Fonts
+======================================*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+
+
+
+/*======================================
+General Styles
+======================================*/
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	max-width: 100%;
 }
+
+/*.wrapper {
+	display: block;
+	margin: 0 auto;
+	width: 95%;
+}*/
+
+.flex {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+
+
+/*======================================
+Header
+======================================*/
+
+header {
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	margin: 0 auto;
+	margin-top: 10px;
+	width: 95%;
+}
+
+.header-text {
+	color: #2d3c49;
+	flex-direction: column;
+	text-align: right;
+	text-transform: uppercase;
+}
+
+.header-text h1 {
+	font-size: 2em;
+	font-weight: 300;
+}
+
+.header-text h2 {
+	font-weight: 500;
+	line-height: 2em;
+}
+
+.logo {
+	height: 50px;
+	width: 50px;
+}
+
+
+
+/*======================================
+Headline Section
+======================================*/
+
+.headline-img {
+	width: 100%;
+}
+
+
+
+/*======================================
+Featured Section
+======================================*/
+
+.featured {
+	flex-direction: column;
+	margin-top: 10px;
+}
+
+.container {
+	align-items: center;
+	color: #2d3c49;
+	flex-direction: column;
+	margin-bottom: 10px;
+}
+
+.container p {
+	font-weight: 600;
+	line-height: 2em;
+}
+
+
+.container a {
+	color: #2d3c49;
+	font-size: 0.85em;
+	font-weight: 300;
+	text-decoration: none;
+}
+
+.featured-img {
+	width: 75%;
+}
+
+
+
+/*======================================
+Footer
+======================================*/
+
+footer p {
+	color: #2d3c49;
+	font-weight: 400;
+	margin: 10px 0;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
