@@ -13,16 +13,24 @@ Google Fonts
 General Styles
 ======================================*/
 
+html, body {
+	/*height: 100%;*/
+	margin: 0 auto;
+}
+
 body {
+	display: flex;
+	flex-direction: column;
 	font-family: 'Open Sans', sans-serif;
+	min-height: 100vh;
 	max-width: 100%;
 }
 
-/*.wrapper {
-	display: block;
+.wrapper {
+	flex: 1;
+	flex-direction: column;
 	margin: 0 auto;
-	width: 95%;
-}*/
+}
 
 .flex {
 	display: flex;
@@ -71,15 +79,29 @@ header {
 Headline Section
 ======================================*/
 
+/*.headline-img {
+	width: 100%;
+}*/
+
 .headline-img {
+	background-image: url('../assets/headline.jpg');
+	background-position: center bottom;
+	background-size: cover;
+	height: 200px;
 	width: 100%;
 }
-
 
 
 /*======================================
 Featured Section
 ======================================*/
+
+.featured-header {
+	color: #7d97ad;
+	font-size: 1.5em;
+	font-weight: 600;
+	margin: 10px;
+}
 
 .featured {
 	flex-direction: column;
@@ -91,11 +113,12 @@ Featured Section
 	color: #2d3c49;
 	flex-direction: column;
 	margin-bottom: 10px;
+	text-align: center;
 }
 
 .container p {
 	font-weight: 600;
-	line-height: 2em;
+	margin: 10px 0;
 }
 
 
@@ -104,6 +127,10 @@ Featured Section
 	font-size: 0.85em;
 	font-weight: 300;
 	text-decoration: none;
+}
+
+.container a:hover {
+	color: #b2bec3;
 }
 
 .featured-img {
@@ -116,13 +143,60 @@ Featured Section
 Footer
 ======================================*/
 
-footer p {
+footer {
 	color: #2d3c49;
 	font-weight: 400;
-	margin: 10px 0;
+	margin: 20px 0;
 	text-align: center;
 }
 
+
+
+/*======================================
+Responsive Styles
+======================================*/
+
+@media all and (min-width: 500px) {
+	.headline-img {
+		height: 400px;
+	}
+}
+
+@media all and (min-width: 800px) {
+	.featured {
+		flex-direction: row;
+		margin: 0 10px;
+	}
+
+	.container {
+		width: 33%;
+		margin: 0 10px;
+	}
+
+	.container a {
+		font-size: 1em;
+	}
+
+	.featured-img {
+		width: 100%;
+	}
+}
+
+@media all and (min-width: 1000px) {
+	.headline-img {
+		height: 450px;
+	}
+
+	.featured {
+		margin: 0 auto;
+		width: 90%;
+	}
+
+	.featured-header {
+		font-size: 2em;
+		margin: 20px 0 20px 25px;
+	}
+}
 
 
 
